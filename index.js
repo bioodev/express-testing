@@ -48,7 +48,7 @@ app.listen(PORT, async () => {
     console.log('Puerto:', process.env.DB_PORT);
     console.log('Usuario:', process.env.DB_USER);
     console.log('Base de datos:', process.env.DB_DATABASE);
-
+    
     // Intentar establecer la conexión a la base de datos
     connection = await createConnection();
     if (!connection) {
