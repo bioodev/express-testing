@@ -6,7 +6,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('¡Hola, mundo! Conectado a MySQL. ${process.env.DB_HOST}, ${process.env.DB_PORT}, ${process.env.DB_USER}, ${process.env.DB_PASSWORD}, ${process.env.DB_DATABASE}');
+    res.send(`Variables de entorno: ${process.env.DB_HOST}, ${process.env.DB_PORT}, ${process.env.DB_USER}, ${process.env.DB_PASSWORD}, ${process.env.DB_DATABASE}`);
 });
 
 app.listen(PORT, () => {
